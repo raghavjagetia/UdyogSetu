@@ -75,6 +75,11 @@ npm run dev
 
 Open http://localhost:5173 — the dev server proxies `/api` to `http://127.0.0.1:8001`.
 
+## Deploying
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for hosting this on Render (a `render.yaml`
+Blueprint in the repo root provisions both the API and the static frontend).
+
 ## Project structure
 
 ```

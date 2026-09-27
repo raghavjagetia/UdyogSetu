@@ -10,3 +10,10 @@ DATABASE_URL = os.environ.get("UDYOGSETU_DATABASE_URL", f"sqlite:///{os.path.joi
 
 UPLOAD_DIR = os.path.join(BASE_DIR, "uploads")
 os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+_default_origins = "http://localhost:5173,http://127.0.0.1:5173"
+ALLOWED_ORIGINS = [
+    origin.strip()
+    for origin in os.environ.get("UDYOGSETU_ALLOWED_ORIGINS", _default_origins).split(",")
+    if origin.strip()
+]
