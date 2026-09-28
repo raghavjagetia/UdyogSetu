@@ -2,11 +2,10 @@
 
 Every account below uses the same password: **`password123`**
 
-These only exist in the local SQLite dev database (`backend/udyogsetu.db`).
-Deleting that file and restarting the backend resets you back to just the
-original 3 seeded accounts (Entrepreneur, Officer, Admin) — the rest were
-added afterwards to populate demo data and are listed here so you don't
-have to re-create or remember them.
+All of these accounts, plus 20 sample applications (approved / rejected /
+under review / submitted, with some overdue items), are created automatically
+by `seed_data.py` on startup whenever the database is empty — locally and on
+Render. Deleting `backend/udyogsetu.db` and restarting resets to that state.
 
 ## Core accounts
 

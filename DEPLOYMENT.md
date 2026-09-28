@@ -55,9 +55,9 @@ restarts or redeploys (including the free tier's automatic spin-down after
 15 minutes of inactivity).
 
 This is *mostly* fine for a demo: `seed_data.py` re-seeds the rules library,
-schemes, and the three core demo accounts automatically on every startup, so
-the app is never broken — you just lose any applications/documents created
-since the last restart.
+schemes, all demo accounts, and 20 sample applications automatically on every
+startup, so dashboards are never empty — you just lose any applications or
+documents you created yourself since the last restart.
 
 If you want data to actually persist between restarts, you have two options:
 1. **Add a Render Disk** (requires upgrading `udyogsetu-api` off the free
